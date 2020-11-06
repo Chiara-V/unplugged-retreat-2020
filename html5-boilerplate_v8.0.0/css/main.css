@@ -87,6 +87,211 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/******BASE STYLES - Header and Footer ******/
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/***BODY***/
+body {
+}
+
+/*---------headlines---------*/
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+/*****HEADER********/
+header {
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+.header-divider {
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul li {
+}
+
+/*-----------------------MOBILE---------------------*/
+/*---------------HOMEPAGE---------------*/
+
+/*********HERO AREA********/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*******MAIN*********/
+main {
+}
+
+main .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***newsletter***/
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.form-description {
+}
+
+.form {
+}
+
+/***general info***/
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+article .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features-item-description {
+}
+
+/**previous retreats**/
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+article {
+}
+
+/********FOOTER*******/
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+}
+
+address {
+}
+
+.email {
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+}
+
+/*---------------ABOUT PAGE---------------*/
+/*****MAIN*****/
+/**mission**/
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+article .mission-content {
+}
+
+/**location**/
+.map {
+}
+
+/**contact info**/
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-info {
+}
+
+.email {
+}
+
+.chat {
+}
+
+.email2 {
+}
+
+/*---------------FAQ PAGE---------------*/
+/****MAIN****/
+/****faq****/
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+article .faq-content {
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +465,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
