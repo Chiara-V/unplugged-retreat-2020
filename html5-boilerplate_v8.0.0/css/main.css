@@ -97,10 +97,14 @@ footer {
 }
 /***BODY***/
 body {
+  padding: 0 20px;
 }
 
 /*---------headlines---------*/
-h1 {
+h1,
+h2,
+h3 {
+  width: 85%;
 }
 
 h2 {
@@ -118,10 +122,16 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
+#logo {
+  padding: 15px 0;
+  width: 60%
+}
 
 .header-divider {
+  width: 100%;
 }
 
 header nav {
@@ -129,6 +139,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 17px;
 }
 
 header nav ul {
@@ -138,6 +149,11 @@ header nav ul {
 }
 
 header nav ul li {
+  width: 25%;
+}
+
+h1 {
+  padding: 50px 0 330px;
 }
 
 /*-----------------------MOBILE---------------------*/
@@ -152,13 +168,8 @@ header nav ul li {
 }
 
 /*******MAIN*********/
-main {
-}
-
-main .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main .form-description h3 {
+  padding: 29px 0 35px;
 }
 
 /***newsletter***/
@@ -167,6 +178,15 @@ main .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 29px 0 53px;
+}
+
+#button {
+  margin-top: 18px;
+}
+
+.aside p, input {
+  width: 85%;
 }
 
 .form-description {
@@ -181,6 +201,11 @@ main .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0 63px;
+}
+
+.features h2 {
+  padding-bottom: 67px;
 }
 
 article .features-items {
@@ -190,10 +215,31 @@ article .features-items {
   flex-flow: row wrap;
 }
 
+article {
+}
+
+article p {
+  padding-bottom: 50px;
+}
+
+icon {
+  padding-bottom: 40px;
+  width: 55%;
+}
+
 .features-item-description {
+  width: 55%;
 }
 
 /**previous retreats**/
+main .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 50px 0 46px;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -201,7 +247,20 @@ article .features-items {
   flex-flow: row wrap;
 }
 
-article {
+.reviews h2 {
+  padding-bottom: 25px;
+}
+
+img {
+  padding-bottom: 21px;
+  width: 85%;
+}
+
+.reviews h3 {
+  padding-bottom: 25px;
+}
+
+.reviews p {
 }
 
 /********FOOTER*******/
@@ -209,9 +268,17 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  width: 45%;
+  padding: 50px 0 12px;
+}
+
+.footer-content h3 {
+  padding-bottom: 20px;
 }
 
 .contact {
+  padding-bottom: 47px;
 }
 
 address {
@@ -224,25 +291,35 @@ address {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-flow: row wrap;
+  padding-bottom: 52px;
+}
+
+.social h3 {
+  padding-bottom: 21px;
 }
 
 .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 15%;
 }
 
 .copyright {
+  width: 50%;
 }
 
 /*---------------ABOUT PAGE---------------*/
 /*****MAIN*****/
 /**mission**/
-.mission {
+.mission .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 85%;
+  padding: 50px 0;
 }
 
 article .mission-content {
@@ -250,6 +327,7 @@ article .mission-content {
 
 /**location**/
 .map {
+  width: 100%;
 }
 
 /**contact info**/
@@ -260,7 +338,12 @@ article .mission-content {
   flex-flow: row wrap;
 }
 
-.contact-info {
+.contact .content-wrapper{
+  padding: 52px 0 50px;
+}
+
+.contact-info, .chat {
+  width: 65%;
 }
 
 .email {
@@ -280,6 +363,8 @@ article .mission-content {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 85%;
+  padding: 50px 0 47px;
 }
 
 #faq .content-wrapper {
@@ -289,7 +374,8 @@ article .mission-content {
   flex-flow: row wrap;
 }
 
-article .faq-content {
+ .faq-content h3 {
+  padding-bottom: 46px;
 }
 
 /* ==========================================================================
