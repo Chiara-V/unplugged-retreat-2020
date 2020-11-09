@@ -165,6 +165,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 /*******MAIN*********/
@@ -251,7 +252,7 @@ main .content-wrapper {
   padding-bottom: 25px;
 }
 
-img {
+.reviews img {
   padding-bottom: 21px;
   width: 85%;
 }
@@ -331,14 +332,14 @@ article .mission-content {
 }
 
 /**contact info**/
-.contact {
+.info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.contact .content-wrapper{
+.info .content-wrapper{
   padding: 52px 0 50px;
 }
 
@@ -465,16 +466,93 @@ article .mission-content {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/*************TABLET*************/
+@media only screen and (min-width: 768px) {
+  /***BODY***/
+  body {
+    padding: 0 64px;
+  }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/***----HOMEPAGE----***/
+/**header**/
+  #logo, nav {
+    width: 50%;
+  }
+
+  header nav ul {
+    justify-content: space-around;
+  }
+
+  .header-divider {
+    width: 0;
+  }
+
+/**newsletter**/
+  .form-description, .form {
+    width: 50%;
+  }
+
+/**general info**/
+  .features {
+    width: 100%;
+  }
+
+  .features-items {
+    width: 50%;
+  }
+
+/**reviews**/
+  .reviews img {
+    width: 50%;
+  }
+
+  .reviews article {
+    width: 50%;
+  }
+
+/**footer**/
+  .footer-content {
+    width: 100%;
+  }
+
+  .contact, .social {
+    width: 50%;
+  }
+
+  .copyright {
+    width: 100%;
+  }
+
+/***----ABOUT PAGE----***/
+/**mission**/
+  .mission .content-wrapper {
+    width: 100%;
+  }
+  .mission-content {
+    width: 50%;
+  }
+
+/**contact info**/
+  .info {
+    width: 100%;
+  }
+
+  .contact-info, .chat {
+    width: 50%;
+  }
+
+/***----FAQ PAGE----***/
+  .faq {
+    width: 100%;
+  }
+
+  .faq-content {
+    width: 50%;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/***************DESKTOP***********/
+@media only screen and (min-width: 1200px) {
 }
 
 /* ==========================================================================
