@@ -169,7 +169,7 @@ h1 {
 }
 
 /*******MAIN*********/
-main .form-description h3 {
+main .form-description {
   padding: 29px 0 35px;
 }
 
@@ -479,6 +479,14 @@ article .mission-content {
     width: 50%;
   }
 
+  #logo {
+    padding: 31px 0 32px;
+  }
+
+  header nav {
+    padding: 45px 0 40px;
+  }
+
   header nav ul {
     justify-content: space-around;
   }
@@ -487,13 +495,22 @@ article .mission-content {
     width: 0;
   }
 
+  h1 {
+    padding: 95px 0 420px;
+  }
+
 /**newsletter**/
   .form-description, .form {
     width: 50%;
   }
 
+  main .aside {
+    padding: 49px 0 48px;
+  }
+
 /**general info**/
   .features {
+    padding: 96px 0 92px;
     width: 100%;
   }
 
@@ -501,7 +518,19 @@ article .mission-content {
     width: 50%;
   }
 
+  .first, .second {
+    padding: 38px 0 30px;
+  }
+
+  icon {
+    padding: 48px 0 30px;
+  }
+
 /**reviews**/
+  main .content-wrapper {
+    padding: 104px 0 100px;
+  }
+
   .reviews img {
     width: 50%;
   }
@@ -516,6 +545,7 @@ article .mission-content {
   }
 
   .contact, .social {
+    padding: 100px 0 102px;
     width: 50%;
   }
 
@@ -526,14 +556,22 @@ article .mission-content {
 /***----ABOUT PAGE----***/
 /**mission**/
   .mission .content-wrapper {
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 98px 0;
     width: 100%;
   }
   .mission-content {
-    width: 50%;
+    width: 45%;
+  }
+
+  .box1 {
+    padding-right: 40px;
   }
 
 /**contact info**/
   .info {
+    padding: 97px 0;
     width: 100%;
   }
 
@@ -543,16 +581,83 @@ article .mission-content {
 
 /***----FAQ PAGE----***/
   .faq {
+    padding: 98px 0 101px;
     width: 100%;
   }
 
   .faq-content {
-    width: 50%;
+    width: 45%;
   }
 }
 
 /***************DESKTOP***********/
 @media only screen and (min-width: 1200px) {
+/***BODY***/
+  body {
+    padding: 0 120px;
+  }
+
+/***----HOMEPAGE----***/
+/**header**/
+  #logo {
+    padding: 22px 0;
+  }
+
+  header nav {
+    padding: 42px 0 38px;
+  }
+
+  h1 {
+    padding: 43px 0 435px;
+  }
+
+/**newsletter**/
+  main .aside {
+    padding: 47px 0 50px;
+  }
+/**general info**/
+  .features {
+    padding: 103px 0 91px;
+    width: 100%;
+  }
+
+  .features-items {
+    width: 33.3%;
+  }
+
+  .first, .second, .third {
+    padding: 98px 0 61px;
+  }
+
+/**reviews**/
+  main .content-wrapper {
+    padding: 99px 0;
+  }
+
+  .reviews h2 {
+    padding-bottom: 89px;
+  }
+
+/**footer**/
+  .contact, .social {
+    padding: 102px 0;
+  }
+
+/***----ABOUT PAGE----***/
+/**mission**/
+  .mission .content-wrapper {
+    padding: 96px 0 101px;
+  }
+
+/**contact info**/
+  .info {
+    padding: 97px 0 95px;
+  }
+
+/***----FAQ PAGE----***/
+  .faq {
+    padding: 97px 0 99px;
+  }
 }
 
 /* ==========================================================================
