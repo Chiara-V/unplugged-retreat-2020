@@ -86,17 +86,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General Styles*/
 
-/******BASE STYLES - Header and Footer ******/
-header,
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+html {
+  font-size: 16px;
 }
+
 /***BODY***/
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
   padding: 0 20px;
 }
 
@@ -104,13 +103,69 @@ body {
 h1,
 h2,
 h3 {
+  font-family: 'Poppins', sans-serif;
   width: 85%;
 }
 
+h1 {
+  font-size: 2.25rem;
+}
+
 h2 {
+  font-size: 1.875rem;
 }
 
 h3 {
+  font-size: 1.125rem;
+}
+
+/*---------lists---------*/
+ul {
+  font-size: 1.125rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 33px;
+}
+
+/*---------links---------*/
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+/*---------paragraphs---------*/
+p {
+  font-size: 1em;
+  line-height: 18px;
+}
+
+/*---------images---------*/
+img {
+}
+
+/*---------address---------*/
+address {
+  font-style: normal;
+}
+address a {
+  color: black;
+}
+
+/*---------content wrapper---------*/
+.content-wrapper {
+}
+
+/******Header and Footer******/
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /*****HEADER********/
@@ -272,6 +327,7 @@ main .content-wrapper {
   flex-flow: row wrap;
   width: 45%;
   padding: 50px 0 12px;
+  text-align: center;
 }
 
 .footer-content h3 {
@@ -468,7 +524,25 @@ article .mission-content {
    ========================================================================== */
 /*************TABLET*************/
 @media only screen and (min-width: 768px) {
-  /***BODY***/
+/*--------headlines-------*/
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+/*---------lists---------*/
+  ul {
+    font-size: 1em;
+  }
+
+/***BODY***/
   body {
     padding: 0 64px;
   }
@@ -634,6 +708,33 @@ article .mission-content {
 
 /***************DESKTOP***********/
 @media only screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+
+/*--------headlines-------*/
+    h1 {
+      font-size: 3.33rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.66rem;
+    }
+
+/*---------lists---------*/
+    ul {
+      font-size: 1em;
+    }
+
+/*---------paragraphs---------*/
+      p {
+        line-height: 24px;
+      }
+
 /***BODY***/
   body {
     padding: 0 120px;
