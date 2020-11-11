@@ -94,9 +94,9 @@ html {
 
 /***BODY***/
 body {
+  color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  padding: 0 20px;
 }
 
 /*---------headlines---------*/
@@ -104,6 +104,7 @@ h1,
 h2,
 h3 {
   font-family: 'Poppins', sans-serif;
+  font-weight: normal;
   width: 85%;
 }
 
@@ -125,6 +126,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 li {
@@ -151,9 +153,6 @@ img {
 address {
   font-style: normal;
 }
-address a {
-  color: black;
-}
 
 /*---------content wrapper---------*/
 .content-wrapper {
@@ -166,10 +165,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+    background-color: #202322;
+    padding: 0 20px;
 }
 
 /*****HEADER********/
-header {
+main {
 }
 
 header .content-wrapper {
@@ -225,6 +226,7 @@ h1 {
 
 /*******MAIN*********/
 main .form-description {
+  justify-content: center;
   padding: 29px 0 35px;
 }
 
@@ -234,7 +236,12 @@ main .form-description {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 29px 0 53px;
+    background-color: #527158;
+}
+
+.aside .content-wrapper {
+  padding-top: 0;
+  padding-bottom: 50px;
 }
 
 #button {
@@ -246,6 +253,7 @@ main .form-description {
 }
 
 .form-description {
+  width: 75%;
 }
 
 .form {
@@ -258,10 +266,12 @@ main .form-description {
   align-items: center;
   flex-flow: row wrap;
   padding: 50px 0 63px;
+    text-align: center;
 }
 
 .features h2 {
   padding-bottom: 67px;
+  text-align: left;
 }
 
 article .features-items {
@@ -272,6 +282,10 @@ article .features-items {
 }
 
 article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 article p {
@@ -293,7 +307,7 @@ main .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0 46px;
+  padding-top: 50px;
 }
 
 .reviews {
@@ -312,11 +326,12 @@ main .content-wrapper {
   width: 85%;
 }
 
-.reviews h3 {
-  padding-bottom: 25px;
+.reviews p {
+  padding: 0 40px;
 }
 
-.reviews p {
+#reviews {
+  background-color: #2a423a;
 }
 
 /********FOOTER*******/
@@ -325,7 +340,7 @@ main .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 45%;
+  width: 50%;
   padding: 50px 0 12px;
   text-align: center;
 }
@@ -338,10 +353,8 @@ main .content-wrapper {
   padding-bottom: 47px;
 }
 
-address {
-}
-
-.email {
+#number {
+  margin: 0;
 }
 
 .social {
@@ -364,19 +377,32 @@ address {
 }
 
 .copyright {
-  width: 50%;
+  width: 100%;
 }
 
 /*---------------ABOUT PAGE---------------*/
 /*****MAIN*****/
 /**mission**/
+.mission {
+  background-color: #527158;
+}
+
 .mission .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 85%;
+  width: 100%;
   padding: 50px 0;
+}
+
+.mission h2 {
+  width: 80%;
+}
+
+.mission p {
+  padding-bottom: 0;
+  width: 80%;
 }
 
 article .mission-content {
@@ -393,23 +419,16 @@ article .mission-content {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+    background-color: #2a423a;
 }
 
 .info .content-wrapper{
   padding: 52px 0 50px;
+  width: 100%;
 }
 
 .contact-info, .chat {
   width: 65%;
-}
-
-.email {
-}
-
-.chat {
-}
-
-.email2 {
 }
 
 /*---------------FAQ PAGE---------------*/
@@ -420,8 +439,12 @@ article .mission-content {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+    background-color: #527158;
+}
+
+.faq p {
   width: 85%;
-  padding: 50px 0 47px;
 }
 
 #faq .content-wrapper {
@@ -431,8 +454,31 @@ article .mission-content {
   flex-flow: row wrap;
 }
 
- .faq-content h3 {
-  padding-bottom: 46px;
+/***********buttons*****************/
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -543,7 +589,8 @@ article .mission-content {
   }
 
 /***BODY***/
-  body {
+  header,
+  footer {
     padding: 0 64px;
   }
 
@@ -623,19 +670,32 @@ article .mission-content {
 
 /**reviews**/
   main .content-wrapper {
-    padding: 104px 0 100px;
+    padding-top: 70px;
     width: 100%;
   }
 
+  #reviews {
+    padding-bottom: 50px;
+  }
+
   .reviews img {
-    width: 50%;
+    width: 40%;
+  }
+
+  .reviews h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .reviews p {
+    padding: 0;
   }
 
   .reviews article {
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
-    width: 50%;
+    width: 40%;
   }
 
 /**footer**/
@@ -643,6 +703,10 @@ article .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+  }
+
+  .footer-content h3 {
     width: 100%;
   }
 
@@ -669,19 +733,18 @@ article .mission-content {
 
   .mission-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 50%;
   }
 
-  .box1 {
-    padding-right: 40px;
+  .mission p {
+    width: 70%;
   }
 
 /**contact info**/
   .info {
     justify-content: space-around;
-    padding: 97px 0;
     width: 100%;
   }
 
@@ -690,18 +753,25 @@ article .mission-content {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    width: 50%;
+    width: 42%;
   }
 
 /***----FAQ PAGE----***/
   .faq {
     justify-content: space-around;
-    padding: 98px 0 101px;
     width: 100%;
   }
 
+  #faq {
+    width: 100%;
+  }
+
+  .faq h3, .faq p {
+    width: 90%;
+  }
+
   .faq-content {
-    flex-basis: 320px;
+    align-self: flex-start;
     width: 45%;
   }
 }
@@ -736,8 +806,13 @@ article .mission-content {
       }
 
 /***BODY***/
-  body {
+  header,
+  footer {
     padding: 0 120px;
+  }
+
+  footer {
+    justify-content: space-around;
   }
 
 /***----HOMEPAGE----***/
@@ -802,6 +877,9 @@ article .mission-content {
     padding: 97px 0 95px;
   }
 
+  .info .content-wrapper {
+    padding: 0;
+  }
 /***----FAQ PAGE----***/
   .faq {
     padding: 97px 0 99px;
