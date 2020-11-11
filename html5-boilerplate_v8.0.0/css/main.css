@@ -475,6 +475,14 @@ article .mission-content {
 
 /***----HOMEPAGE----***/
 /**header**/
+  header {
+    justify-content: space-around;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
   #logo, nav {
     width: 50%;
   }
@@ -485,10 +493,6 @@ article .mission-content {
 
   header nav {
     padding: 45px 0 40px;
-  }
-
-  header nav ul {
-    justify-content: space-around;
   }
 
   .header-divider {
@@ -508,10 +512,27 @@ article .mission-content {
     padding: 49px 0 48px;
   }
 
+  .aside .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-left: 90px;
+    padding-right: 50px;
+  }
+
 /**general info**/
   .features {
     padding: 96px 0 92px;
     width: 100%;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 320px;
   }
 
   .features-items {
@@ -529,6 +550,7 @@ article .mission-content {
 /**reviews**/
   main .content-wrapper {
     padding: 104px 0 100px;
+    width: 100%;
   }
 
   .reviews img {
@@ -536,11 +558,17 @@ article .mission-content {
   }
 
   .reviews article {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
     width: 50%;
   }
 
 /**footer**/
   .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 
@@ -550,6 +578,9 @@ article .mission-content {
   }
 
   .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
@@ -561,7 +592,11 @@ article .mission-content {
     padding: 98px 0;
     width: 100%;
   }
+
   .mission-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 45%;
   }
 
@@ -571,21 +606,28 @@ article .mission-content {
 
 /**contact info**/
   .info {
+    justify-content: space-around;
     padding: 97px 0;
     width: 100%;
   }
 
   .contact-info, .chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
     width: 50%;
   }
 
 /***----FAQ PAGE----***/
   .faq {
+    justify-content: space-around;
     padding: 98px 0 101px;
     width: 100%;
   }
 
   .faq-content {
+    flex-basis: 320px;
     width: 45%;
   }
 }
@@ -615,6 +657,11 @@ article .mission-content {
   main .aside {
     padding: 47px 0 50px;
   }
+
+  .aside .content-wrapper {
+    padding: 0 100px;
+  }
+
 /**general info**/
   .features {
     padding: 103px 0 91px;
@@ -657,6 +704,10 @@ article .mission-content {
 /***----FAQ PAGE----***/
   .faq {
     padding: 97px 0 99px;
+  }
+
+  .faq-content {
+    flex-basis: 480px;
   }
 }
 
