@@ -242,6 +242,7 @@ main .form-description {
 .aside .content-wrapper {
   padding-top: 0;
   padding-bottom: 50px;
+  width: 85%;
 }
 
 #button {
@@ -253,7 +254,7 @@ main .form-description {
 }
 
 .form-description {
-  width: 75%;
+  width: 100%;
 }
 
 .form {
@@ -396,10 +397,6 @@ main .content-wrapper {
   padding: 50px 0;
 }
 
-.mission h2 {
-  width: 80%;
-}
-
 .mission p {
   padding-bottom: 0;
   width: 80%;
@@ -428,7 +425,7 @@ article .mission-content {
 }
 
 .contact-info, .chat {
-  width: 65%;
+  width: 85%;
 }
 
 /*---------------FAQ PAGE---------------*/
@@ -601,11 +598,12 @@ input[type=button] {
   }
 
   header .content-wrapper {
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
   }
 
   #logo, nav {
-    width: 50%;
+    width: 45%;
   }
 
   #logo {
@@ -613,6 +611,9 @@ input[type=button] {
   }
 
   header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     padding: 45px 0 40px;
   }
 
@@ -621,12 +622,18 @@ input[type=button] {
   }
 
   h1 {
+    margin: 0;
     padding: 95px 0 420px;
+    width: 100%;
   }
 
 /**newsletter**/
   .form-description, .form {
     width: 50%;
+  }
+
+  main .form-description {
+    padding: 0;
   }
 
   main .aside {
@@ -640,6 +647,7 @@ input[type=button] {
     flex-flow: row wrap;
     padding-left: 90px;
     padding-right: 50px;
+      align-items: flex-start;
   }
 
 /**general info**/
@@ -726,7 +734,6 @@ input[type=button] {
 /**mission**/
   .mission .content-wrapper {
     box-sizing: border-box;
-    justify-content: space-between;
     padding: 98px 0;
     width: 100%;
   }
@@ -785,6 +792,14 @@ input[type=button] {
 /*--------headlines-------*/
     h1 {
       font-size: 3.33rem;
+      padding: 43px 0 435px;
+      width: 70%;
+    }
+
+    .hero-area {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
     }
 
     h2 {
@@ -812,7 +827,7 @@ input[type=button] {
   }
 
   footer {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
 /***----HOMEPAGE----***/
@@ -825,8 +840,8 @@ input[type=button] {
     padding: 42px 0 38px;
   }
 
-  h1 {
-    padding: 43px 0 435px;
+  header .content-wrapper {
+    justify-content: space-between;
   }
 
 /**newsletter**/
@@ -835,13 +850,34 @@ input[type=button] {
   }
 
   .aside .content-wrapper {
+    justify-content: space-around;
     padding: 0 100px;
+  }
+
+  .form-description, .form {
+    width: 40%;
+  }
+
+  .form-description h3 {
+    margin: 0;
+  }
+
+  .form h3 {
+    margin-top: 0;
   }
 
 /**general info**/
   .features {
     padding: 103px 0 91px;
     width: 100%;
+  }
+
+  .h2 {
+    width: 85%;
+  }
+
+  .h2 h2 {
+    width: 80%;
   }
 
   .features-items {
@@ -864,6 +900,7 @@ input[type=button] {
 /**footer**/
   .contact, .social {
     padding: 102px 0;
+    width: 33.3%;
   }
 
 /***----ABOUT PAGE----***/
@@ -885,8 +922,8 @@ input[type=button] {
     padding: 97px 0 99px;
   }
 
-  .faq-content {
-    flex-basis: 480px;
+  #faq {
+    padding: 0;
   }
 }
 
