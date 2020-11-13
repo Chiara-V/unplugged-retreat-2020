@@ -427,7 +427,7 @@ article .mission-content {
 /**location**/
 .map figure {
   height: 0;
-  padding-bottom: 133%;
+  padding-bottom: 125%;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -819,6 +819,10 @@ input[type=button] {
     width: 70%;
   }
 
+  .map figure {
+    padding-bottom: 40%;
+  }
+
 /**contact info**/
   .info {
     justify-content: space-around;
@@ -979,6 +983,9 @@ input[type=button] {
     padding: 96px 0 101px;
   }
 
+  .map figure {
+    padding-bottom: 25%;
+  }
 /**contact info**/
   .info {
     padding: 97px 0 95px;
