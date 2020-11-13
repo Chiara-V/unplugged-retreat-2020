@@ -308,16 +308,19 @@ article {
   flex-flow: row wrap;
 }
 
-article p {
-  padding-bottom: 50px;
-}
-
-icon {
-  padding-bottom: 40px;
-  width: 55%;
+.fontawesome-icon {
+  width: 85%;
 }
 
 .features-item-description {
+  margin: 0;
+  padding-bottom: 50px;
+  width: 55%;
+}
+
+.features-items i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
   width: 55%;
 }
 
@@ -717,10 +720,6 @@ input[type=button] {
     align-items: center;
     flex-flow: row wrap;
     flex-basis: 320px;
-  }
-
-  .features article p {
-
   }
 
   .features-items {
