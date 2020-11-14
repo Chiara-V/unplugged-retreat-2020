@@ -345,7 +345,7 @@ main .content-wrapper {
 }
 
 .reviews p {
-  padding: 0 40px;
+  width: 85%
 }
 
 #reviews {
@@ -368,16 +368,21 @@ figure {
   text-align: center;
 }
 
-.footer-content h3 {
-  padding-bottom: 20px;
-}
-
 .contact {
   padding-bottom: 47px;
+  width: 100%;
+}
+
+.contact h3 {
+  width: 100%;
 }
 
 #number {
   margin: 0;
+}
+
+#ft {
+  width: 85%;
 }
 
 .social {
@@ -386,17 +391,28 @@ figure {
   align-items: center;
   flex-flow: row wrap;
   padding-bottom: 52px;
-}
-
-.social h3 {
-  padding-bottom: 21px;
+  width: 100%;
 }
 
 .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 15%;
+  width: 80%;
+}
+
+.icon {
+  margin: 0;
+}
+
+.icon i {
+  background: #527158;
+  border-radius: 50%;
+  font-size: 1em;
+  margin: 0;
+  padding: 14px;
+  height: 16px;
+  width: 16px;
 }
 
 .copyright {
@@ -419,12 +435,13 @@ figure {
   padding: 50px 0;
 }
 
-.mission p {
-  padding-bottom: 0;
-  width: 80%;
+.mission-content {
+  width: 85%;
 }
 
-article .mission-content {
+.mission-content p {
+  padding-bottom: 0;
+  width: 100%;
 }
 
 /**location**/
@@ -458,8 +475,12 @@ article .mission-content {
   width: 100%;
 }
 
-.contact-info, .chat {
+#cnt {
   width: 85%;
+}
+
+.contact-info, .chat {
+  width: 100%;
 }
 
 /*---------------FAQ PAGE---------------*/
@@ -487,7 +508,7 @@ article .mission-content {
 }
 
 .faq p {
-  width: 100%;
+  width: 85%;
 }
 
 .faq h2, faq p {
@@ -719,16 +740,11 @@ input[type=button] {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    flex-basis: 320px;
   }
 
   .features-items {
     align-self: flex-start;
-    width: 50%;
-  }
-
-  icon {
-    padding: 48px 0 30px;
+    width: 40%;
   }
 
 /**reviews**/
@@ -788,6 +804,17 @@ input[type=button] {
   .contact, .social {
     align-self: flex-start;
     padding: 100px 0 102px;
+    width: 50%;
+  }
+
+  .icon i {
+    font-size: 1.2em;
+    padding: 16px;
+    height: 18px;
+    width: 18px;
+  }
+
+  .social-icons {
     width: 50%;
   }
 
@@ -969,6 +996,17 @@ input[type=button] {
 /**footer**/
 #ft {
   justify-content: space-between;
+}
+
+.icon i {
+  font-size: 1.3em;
+  padding: 18px;
+  height: 20px;
+  width: 20px;
+}
+
+.social-icons {
+  width: 65%;
 }
 
   .contact, .social {
