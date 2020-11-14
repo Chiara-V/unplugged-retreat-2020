@@ -187,6 +187,8 @@ header figure {
 }
 
 .header-divider {
+  border-top: 1px solid #ffffff;
+  height: 10px;
   width: 100%;
 }
 
@@ -260,8 +262,8 @@ main .form-description {
   width: 85%;
 }
 
-.form-description {
-  width: 100%;
+.form-description, .form {
+  width: 85%;
 }
 
 /***general info***/
@@ -353,7 +355,7 @@ figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 50%;
+  width: 100%;
   padding: 50px 0 12px;
   text-align: center;
 }
@@ -372,7 +374,7 @@ figure {
 }
 
 #ft {
-  width: 85%;
+  width: 50%;
 }
 
 .social {
@@ -388,7 +390,7 @@ figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100%;
 }
 
 .icon {
@@ -414,6 +416,10 @@ figure {
 /**mission**/
 .mission {
   background-color: #527158;
+}
+
+.mission h2 {
+  margin: 0;
 }
 
 .mission .content-wrapper {
