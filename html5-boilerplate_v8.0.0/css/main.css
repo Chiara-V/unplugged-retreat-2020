@@ -155,10 +155,6 @@ address {
   font-style: normal;
 }
 
-/*---------content wrapper---------*/
-.content-wrapper {
-}
-
 /******Header and Footer******/
 header,
 footer {
@@ -170,9 +166,6 @@ footer {
 }
 
 /*****HEADER********/
-main {
-}
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -269,9 +262,6 @@ main .form-description {
 
 .form-description {
   width: 100%;
-}
-
-.form {
 }
 
 /***general info***/
@@ -398,7 +388,7 @@ figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 90%;
 }
 
 .icon {
@@ -661,9 +651,6 @@ input[type=button] {
   }
 
 /***BODY***/
-  header,
-  footer {
-  }
 
 /***----HOMEPAGE----***/
 /**header**/
@@ -769,7 +756,6 @@ input[type=button] {
   .reviews p {
     padding: 0;
   }
-
 
   .reviews article {
     box-sizing: border-box;
@@ -928,9 +914,6 @@ input[type=button] {
       }
 
 /***BODY***/
-  header,
-  footer {
-  }
 
   footer {
     justify-content: space-between;
